@@ -14,6 +14,32 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        align-items: stretch;
+        /*align-items: center;*/
+
+        font-family: "CrimsonText", "Montserrat Bold", "Roboto light", "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-rendering: optimizelegibility;
+        text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+
+        background-color: rgb(229, 228, 234);
+        /*height: calc(100vh - 70px);*/
+        flex: 1 0 0;
+        padding: 5px 0;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     .global-container {
         width: 600px;
     }

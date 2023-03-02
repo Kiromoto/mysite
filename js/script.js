@@ -9,10 +9,10 @@ for (i = 0; i < coll.length; i++) {
         var content = this.nextElementSibling;
         if (content.style.display === "flex") {
             content.style.display = "none";
-            parentElement.style.padding = "5.0907px 0 5.0907px 0"
+            parentElement.style.padding = "5px 0 5px 0"
         } else {
             content.style.display = "flex";
-            parentElement.style.padding = "22.0907px 0 22.0907px 0"
+            parentElement.style.padding = "22px 0 22px 0"
         }
     });
 };

@@ -143,6 +143,7 @@
 
     .header-contacts-text {
         padding-left: 16px;
+        padding-right: 26px;
         font-family: CrimsonText;
         text-align: left;
         color: rgb(210, 210, 210);
@@ -171,7 +172,8 @@
     }
 
     .sidebar-foto {
-        height: 85%;
+        width: 100%;
+        padding-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -186,7 +188,7 @@
     .ul-unordered {
         font-family: CrimsonText;
         color: rgb(119, 120, 123);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
     }
 
@@ -198,6 +200,7 @@
     .skillbar {
         width: 100%; /* Full width */
         background-color: #ddd; /* Grey background */
+        font-size: 18px;
     }
 
     .skills {
@@ -276,7 +279,7 @@
     .sidebar-title {
         font-family: "CrimsonText SemiBold";
         color: rgb(51, 49, 50);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
         letter-spacing: 0.47px;
         margin-bottom: 0px;
@@ -286,19 +289,299 @@
         display: block;
         font-family: CrimsonText;
         color: rgb(119, 120, 123);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
     }
 
     /*Стили для SIDEBAR - ОКОНЧАНИЕ*/
 
+    /*Стили для SECTION - НАЧАЛО*/
+    .main-column {
+        display: table-cell;
+        /*padding: 46.7506px 28.0504px;*/
+        padding: 5px;
+        direction: ltr;
+        background-color: #FFFFFF;
+    }
 
 
+    .about-element {
+        display: block;
+        margin-bottom: 0;
+        padding-top: 10px;
+        margin: 0 10px 0;
+        padding-bottom: 23px;
+        text-align: justify;
 
+    }
+
+    .block-info {
+        margin-bottom: 0;
+        /*padding-top: 22.0907px;*/
+        /*padding-bottom: 22.0907px;*/
+        padding-top: 5.0907px;
+        padding-bottom: 5.0907px;
+    }
+
+    .block-info-group {
+        padding-top: 16.22px;
+    }
+
+    .block-info-group-el {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block-info-title {
+        font-family: "Montserrat Bold";
+        font-weight: 600;
+        font-size: 18px;
+        color: rgb(51, 62, 80);
+        text-transform: uppercase;
+        padding-top: 15.194px;
+        padding-bottom: 14.0252px;
+        border-bottom: 1px solid rgb(51, 62, 80);
+        border-top: 1px solid rgb(51, 62, 80);
+        text-align: left;
+        letter-spacing: 3.5063px;
+        break-inside: avoid-page;
+    }
+
+    .button-info-title {
+        width: 100%;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        font-family: "Montserrat Bold";
+        font-weight: 600;
+        font-size: 18.7003px;
+        color: rgb(51, 62, 80);
+        padding-top: 15.194px;
+        padding-bottom: 14.0252px;
+        border: none;
+        border-bottom: 1px solid rgb(51, 62, 80);
+        border-top: 1px solid rgb(51, 62, 80);
+        text-align: left;
+        letter-spacing: 3.5063px;
+        break-inside: avoid-page;
+
+    }
+
+    .button-info-title:active {
+        background-color: rgb(229, 228, 234);
+    }
+
+    .button-info-title:hover {
+        background-color: rgb(229, 228, 234);
+    }
+
+    .button-info-title:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+    .block-info-content {
+        display: none;
+        overflow: hidden;
+        /*display: flex;*/
+        flex-direction: row;
+        padding-top: 29.22px;
+        padding-bottom: 29.22px;
+    }
+
+    .block-info-content-left {
+        width: 30%;
+        padding-right: 20px;
+    }
+
+    .where-work-learn {
+        font-family: "CrimsonText SemiBold";
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: rgb(51, 49, 50);
+        font-size: 16.36px;
+    }
+
+    .when-work-learn {
+        color: rgb(175, 150, 97);
+        font-family: "CrimsonText SemiBold";
+        font-size: 15.19px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .geo-work-learn {
+        font-family: "CrimsonText SemiBold";
+        font-size: 15.19px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: rgb(175, 150, 97);
+    }
+
+    .block-info-content-right {
+        width: 70%;
+        padding-left: 14.03px;
+        padding-right: 0;
+        position: relative;
+    }
+
+    .block-info-content-right::before {
+        content: "";
+        position: absolute;
+        top: 13.2544px;
+        bottom: -20.6134px;
+        width: 1.10453px;
+        background-color: rgb(188, 190, 192);
+        left: 0;
+    }
+
+    .block-info-content-right::after {
+        content: "";
+        position: absolute;
+        top: 5.52267px;
+        height: 9.94081px;
+        width: 9.94081px;
+        border-radius: 50%;
+        background-color: rgb(188, 190, 192);
+        left: -4.41814px;
+    }
+
+    .job-title {
+        font-family: "CrimsonText SemiBold";
+        font-size: 16.36px;
+        line-height: 1.43;
+        letter-spacing: 1.64px;
+        padding: 0;
+        margin-bottom: 4.67506px;
+        border: none;
+        text-align: left;
+        font-weight: 600;
+        color: rgb(51, 62, 80);
+        text-transform: uppercase;
+    }
+
+    .job-description {
+        text-decoration: none;
+        display: inline;
+        font-family: CrimsonText;
+        font-size: 18px;
+        line-height: 1.43;
+        color: rgb(119, 120, 123);
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .video-container {
+        padding-right: 10px;
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+    /*Стили для SECTION - ОКОНЧАНИЕ*/
+    /*Стили для FOOTER - НАЧАЛО*/
+    .footer-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        height: 300px;
+        padding: 20px 35px 0;
+        background: rgb(37, 46, 62);
+        z-index: 2;
+        border: none;
+
+        font-family: "Montserrat Bold";
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-contacts-title {
+        /*margin: 0 29.22px;*/
+        font-family: "Montserrat Bold";
+        color: rgb(175, 150, 97);
+        letter-spacing: 3.27px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .footer-contacts-text {
+        font-family: CrimsonText;
+        text-align: justify;
+        color: rgb(210, 210, 210);
+        word-break: break-all;
+        font-size: 16px;
+    }
+
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .grid-link-container {
+        display: grid;
+        grid-template-columns: repeat(2, 175px);
+    }
+
+    .skill-link {
+        justify-self: left;
+        font-family: CrimsonText;
+        color: rgb(210, 210, 210);
+        text-decoration: none;
+    }
+
+    .skill-link:hover {
+        color: rgb(175, 150, 97);
+    }
+
+    /*Стили для FOOTER - ОКОНЧАНИЕ*/
 }
 
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
+/*__________________________________________________________________*/
 
-@media only screen  and (min-width: 1824px) {
+@media only screen  and (min-width: 490px) {
     /* стили для ноутбуков и настольных ПК*/
     html {
         display: flex;
@@ -477,7 +760,7 @@
     .ul-unordered {
         font-family: CrimsonText;
         color: rgb(119, 120, 123);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
     }
 
@@ -489,6 +772,7 @@
     .skillbar {
         width: 100%; /* Full width */
         background-color: #ddd; /* Grey background */
+        font-size: 18px;
     }
 
     .skills {
@@ -567,7 +851,7 @@
     .sidebar-title {
         font-family: "CrimsonText SemiBold";
         color: rgb(51, 49, 50);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
         letter-spacing: 0.47px;
         margin-bottom: 0px;
@@ -577,11 +861,12 @@
         display: block;
         font-family: CrimsonText;
         color: rgb(119, 120, 123);
-        font-size: 16.36px;
+        font-size: 18px;
         line-height: 1.43;
     }
 
     /*Стили для SIDEBAR - ОКОНЧАНИЕ*/
+
     /*Стили для SECTION - НАЧАЛО*/
     .main-column {
         display: table-cell;
@@ -595,15 +880,15 @@
     .about-element {
         display: block;
         margin-bottom: 0;
-        padding-top: 23.3753px;
-        padding-bottom: 23.3753px;
-        break-inside: auto !important;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-align: justify;
     }
 
     .block-info {
         margin-bottom: 0;
-        /*padding-top: 22.0907px;*/
-        /*padding-bottom: 22.0907px;*/
+        padding-top: 22.0907px;
+        padding-bottom: 22.0907px;
         padding-top: 5.0907px;
         padding-bottom: 5.0907px;
     }
@@ -691,20 +976,20 @@
         line-height: 1.43;
         letter-spacing: normal;
         color: rgb(51, 49, 50);
-        font-size: 16.36px;
+        font-size: 18px;
     }
 
     .when-work-learn {
         color: rgb(175, 150, 97);
         font-family: "CrimsonText SemiBold";
-        font-size: 15.19px;
+        font-size: 18px;
         line-height: normal;
         letter-spacing: normal;
     }
 
     .geo-work-learn {
         font-family: "CrimsonText SemiBold";
-        font-size: 15.19px;
+        font-size: 18px;
         line-height: normal;
         letter-spacing: normal;
         color: rgb(175, 150, 97);
@@ -740,7 +1025,7 @@
 
     .job-title {
         font-family: "CrimsonText SemiBold";
-        font-size: 16.36px;
+        font-size: 20px;
         line-height: 1.43;
         letter-spacing: 1.64px;
         padding: 0;
@@ -756,14 +1041,12 @@
         text-decoration: none;
         display: inline;
         font-family: CrimsonText;
-        font-size: 16.3627px;
+        font-size: 20px;
         line-height: 1.43;
         color: rgb(119, 120, 123);
         position: relative;
         margin: 0;
         padding: 0;
-        break-inside: auto;
-        direction: ltr;
     }
 
     .video-container video {
@@ -776,6 +1059,7 @@
     }
 
     /*Стили для SECTION - ОКОНЧАНИЕ*/
+
     /*Стили для FOOTER - НАЧАЛО*/
     .footer-container {
         display: flex;
@@ -840,6 +1124,7 @@
     .grid-link-container {
         display: grid;
         grid-template-columns: repeat(2, 200px);
+        font-size: 18px;
         margin: 0 29.22px;
     }
 
